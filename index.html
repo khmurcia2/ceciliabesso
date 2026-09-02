@@ -45,22 +45,22 @@
             <div class="font-bold text-3xl font-anton tracking-wide flex items-center gap-2">
                 Cecilia Besso <span class="text-brandRed text-4xl">💋</span>
             </div>
-            <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="bg-brandRed hover:bg-red-800 text-white font-bold py-2 px-6 rounded-md transition duration-300 shadow-lg text-lg flex items-center gap-2 uppercase tracking-wide">
-                Reservar
-            </a>
+            <div class="hidden sm:flex items-center gap-4">
+                <span class="font-bold text-gray-700">Asesoría: <span class="text-brandRed font-anton text-2xl">$50 USD</span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="relative pt-12 pb-20 overflow-hidden bg-white">
-        <!-- Textura sutil de fondo (opcional para dar profundidad) -->
+        <!-- Textura sutil de fondo -->
         <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 
-                <!-- Columna Izquierda: Tipografía Principal -->
+                <!-- Columna Izquierda: Tipografía Principal y Botones -->
                 <div class="w-full lg:w-1/2 text-center lg:text-left">
                     <h1 class="font-anton text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] text-brandBlack uppercase tracking-tight">
                         La verdad que <br>
@@ -78,12 +78,27 @@
                             Una crítica social y una reflexión profunda sobre las falsas apariencias, el poder y las consecuencias destructivas del consumo de drogas.
                         </p>
                     </div>
+
+                    <!-- NUEVO: Botones de Acción Doble -->
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
+                        <!-- Botón Asesoría -->
+                        <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="w-full sm:w-auto bg-brandRed hover:bg-red-800 text-white font-anton text-xl py-4 px-8 rounded-md transition duration-300 shadow-lg flex flex-col items-center justify-center uppercase tracking-wide transform hover:-translate-y-1">
+                            <span>Agendar Sesión</span>
+                            <span class="text-yellow-300 text-sm tracking-normal font-sans font-bold">Por solo $50 USD</span>
+                        </a>
+                        
+                        <!-- Botón Libro -->
+                        <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'." target="_blank" class="w-full sm:w-auto bg-brandBlack hover:bg-gray-900 text-white font-anton text-xl py-4 px-8 rounded-md transition duration-300 shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide border-2 border-brandBlack transform hover:-translate-y-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            Adquirir el Libro
+                        </a>
+                    </div>
+
                 </div>
 
                 <!-- Columna Derecha: Video Reproductor -->
                 <div class="w-full lg:w-1/2">
                     <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-brandBlack transform hover:scale-[1.02] transition duration-300">
-                        <!-- Iframe de YouTube con controles activados (controls=1), permite pantalla completa -->
                         <iframe 
                             class="absolute top-0 left-0 w-full h-full"
                             src="https://www.youtube.com/embed/I-WugAlIbBA?controls=1&rel=0&showinfo=0" 
@@ -96,45 +111,11 @@
                 </div>
 
             </div>
-
-            <!-- Banner de Reserva (Pegado debajo del área principal) -->
-            <div class="mt-16 w-full bg-white shadow-xl rounded-2xl border-t-4 border-brandRed p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-8">
-                
-                <div class="flex items-start gap-4 w-full md:w-1/3">
-                    <div class="bg-red-100 p-3 rounded-full text-brandRed flex-shrink-0">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <p class="font-bold text-gray-900 text-lg">Pide ayuda hoy, el primer paso puede cambiar tu vida.</p>
-                        <p class="text-brandRed font-semibold mt-1">No tienes que enfrentarlo solo.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-center gap-4 w-full md:w-1/3 border-y md:border-y-0 md:border-x border-gray-200 py-4 md:py-0 md:px-8">
-                    <div class="bg-gray-100 p-3 rounded-full text-gray-700 flex-shrink-0">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <div>
-                        <p class="text-sm font-medium text-gray-500 uppercase">Agenda tu consulta virtual</p>
-                        <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="font-anton text-2xl text-brandBlack hover:text-brandRed transition">
-                            +57 315 8511427
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-end text-center md:text-right">
-                    <div class="bg-brandRed text-white font-anton text-4xl py-2 px-6 rounded-md mb-2 shadow-md">
-                        $50 USD
-                    </div>
-                    <p class="text-gray-600 font-medium text-sm">Consulta profesional<br>y confidencial</p>
-                </div>
-
-            </div>
         </div>
     </section>
 
     <!-- Sección de Consecuencias -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-anton text-4xl md:text-5xl text-brandBlack uppercase">Las consecuencias <span class="text-brandRed">ocultas</span></h2>
@@ -188,7 +169,7 @@
         </div>
     </section>
     
-    <!-- Sección de Más Acerca de la Dra. Cecilia Besso (Videos Adicionales) -->
+    <!-- Sección de Más Acerca de la Dra. Cecilia Besso -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -196,71 +177,43 @@
                 <div class="h-2 w-24 bg-brandRed mx-auto mt-4"></div>
             </div>
 
-            <!-- Grilla de Videos (Se reproducen al hacer clic) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                
-                <!-- Video 1 -->
                 <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" 
-                        title="Cecilia Besso - Video 1"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <!-- Video 2 -->
                 <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" 
-                        title="Cecilia Besso - Video 2"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <!-- Video 3 -->
                 <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" 
-                        title="Cecilia Besso - Video 3"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <!-- Video 4 -->
                 <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" 
-                        title="Cecilia Besso - Video 4"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Final -->
+    <!-- Call to Action Final Dual -->
     <section class="py-24 bg-gray-50 text-center px-4 relative overflow-hidden border-t border-gray-200">
         <div class="absolute top-0 left-0 w-full h-2 bg-brandRed"></div>
         <div class="max-w-3xl mx-auto relative z-10">
             <h2 class="font-anton text-5xl md:text-7xl text-brandBlack uppercase mb-6">Da el <span class="text-brandRed">primer paso</span> hoy</h2>
-            <p class="text-2xl text-gray-600 mb-10 font-medium">Reserva tu asesoría virtual por <strong>$50 USD</strong> directamente vía WhatsApp.</p>
+            <p class="text-2xl text-gray-600 mb-10 font-medium">Contáctame directamente vía WhatsApp y elige cómo deseas empezar.</p>
             
-            <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="inline-flex items-center justify-center gap-4 bg-brandRed hover:bg-red-800 text-white font-anton text-2xl md:text-3xl py-5 px-10 rounded-full transition duration-300 shadow-[0_10px_30px_rgba(204,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(204,0,0,0.6)] transform hover:-translate-y-1 uppercase tracking-wide">
-                Contactar al +57 315 8511427
-            </a>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <!-- Botón Asesoría -->
+                <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="bg-brandRed hover:bg-red-800 text-white font-anton text-2xl md:text-3xl py-5 px-10 rounded-xl transition duration-300 shadow-[0_10px_30px_rgba(204,0,0,0.4)] transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center">
+                    Agendar Asesoría
+                    <span class="text-yellow-300 text-lg tracking-normal font-sans font-bold mt-1">Valor: $50 USD</span>
+                </a>
+
+                <!-- Botón Libro -->
+                <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'." target="_blank" class="bg-brandBlack hover:bg-gray-900 text-white font-anton text-2xl md:text-3xl py-5 px-10 rounded-xl transition duration-300 shadow-xl transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center border-2 border-brandBlack">
+                    Adquirir el Libro
+                    <span class="text-gray-300 text-lg tracking-normal font-sans font-medium mt-1">En formato físico o digital</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -269,8 +222,8 @@
         <p>&copy; 2026 Cecilia Besso. Consulta Profesional y Confidencial.</p>
     </footer>
 
-    <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 btn-whatsapp hover:bg-[#128C7E] transition-colors">
+    <!-- Botón Flotante de WhatsApp Genérico -->
+    <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20más%20información%20sobre%20tus%20servicios." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 btn-whatsapp hover:bg-[#128C7E] transition-colors">
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
