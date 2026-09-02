@@ -30,6 +30,22 @@
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
         .btn-whatsapp { animation: pulse-ws 2s infinite; }
+        
+        /* Contenedor de video a prueba de fallos (16:9) */
+        .video-responsive {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporción 16:9 exacta */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -79,7 +95,7 @@
                         </p>
                     </div>
 
-                    <!-- NUEVO: Botones de Acción Doble -->
+                    <!-- Botones de Acción Doble -->
                     <div class="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
                         <!-- Botón Asesoría -->
                         <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="w-full sm:w-auto bg-brandRed hover:bg-red-800 text-white font-anton text-xl py-4 px-8 rounded-md transition duration-300 shadow-lg flex flex-col items-center justify-center uppercase tracking-wide transform hover:-translate-y-1">
@@ -96,17 +112,19 @@
 
                 </div>
 
-                <!-- Columna Derecha: Video Reproductor -->
+                <!-- Columna Derecha: Video Reproductor Principal -->
                 <div class="w-full lg:w-1/2">
-                    <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-brandBlack transform hover:scale-[1.02] transition duration-300">
-                        <iframe 
-                            class="absolute top-0 left-0 w-full h-full"
-                            src="https://www.youtube.com/embed/I-WugAlIbBA?controls=1&rel=0&showinfo=0" 
-                            title="La verdad que nadie cuenta - Cecilia Besso"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                    <!-- Contenedor Seguro para Video -->
+                    <div class="rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-brandBlack transform hover:scale-[1.02] transition duration-300">
+                        <div class="video-responsive">
+                            <iframe 
+                                src="https://www.youtube.com/embed/I-WugAlIbBA?controls=1&rel=0&showinfo=0" 
+                                title="La verdad que nadie cuenta - Cecilia Besso"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
 
@@ -178,17 +196,29 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <!-- Video 1 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" frameborder="0" allowfullscreen></iframe>
+                <!-- Video 2 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" frameborder="0" allowfullscreen></iframe>
+                <!-- Video 3 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="aspect-video rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" frameborder="0" allowfullscreen></iframe>
+                <!-- Video 4 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
