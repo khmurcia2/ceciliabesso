@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cecilia Besso - La verdad que nadie cuenta</title>
+    <title>Licenciada Cecilia Besso - La verdad que nadie cuenta</title>
+    
+    <!-- Preconexión a servidores externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tipografía: Anton para títulos (fuerte) y Nunito para párrafos (cálida y redondeada) -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         'anton': ['Anton', 'sans-serif'],
-                        'sans': ['Inter', 'sans-serif'],
+                        'sans': ['Nunito', 'sans-serif'],
                     },
                     colors: {
                         brandRed: '#CC0000',
-                        brandBlack: '#111111'
+                        brandBlack: '#111111',
+                        brandYellow: '#FBBF24'
                     }
                 }
             }
@@ -35,7 +43,7 @@
         .video-responsive {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* Proporción 16:9 exacta */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
         }
@@ -58,25 +66,40 @@
     <!-- Navbar -->
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="font-bold text-3xl font-anton tracking-wide flex items-center gap-2">
-                Cecilia Besso <span class="text-brandRed text-4xl">💋</span>
+            <div class="flex items-center gap-3">
+                <!-- Logo Original de Instagram -->
+                <a href="https://www.instagram.com/bessocecilia/" target="_blank" class="transform hover:scale-110 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#F58529" />
+                                <stop offset="25%" stop-color="#FEDA77" />
+                                <stop offset="50%" stop-color="#DD2A7B" />
+                                <stop offset="75%" stop-color="#8134AF" />
+                                <stop offset="100%" stop-color="#515BD4" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#ig-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.834a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                    </svg>
+                </a>
+                <div class="font-bold text-2xl md:text-3xl font-anton tracking-wide flex items-center gap-2">
+                    Lic. Cecilia Besso <span class="text-brandRed text-4xl">💋</span>
+                </div>
             </div>
-            <div class="hidden sm:flex items-center gap-4">
-                <span class="font-bold text-gray-700">Asesoría: <span class="text-brandRed font-anton text-2xl">$50 USD</span></span>
+            <div class="hidden md:flex items-center gap-4">
+                <span class="font-bold text-gray-700 text-lg">Videoconsulta: <span class="text-brandRed font-anton text-2xl">$150.000 COP o $50 USD</span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="relative pt-12 pb-20 overflow-hidden bg-white">
-        <!-- Textura sutil de fondo -->
         <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 
-                <!-- Columna Izquierda: Tipografía Principal y Botones -->
+                <!-- Columna Izquierda -->
                 <div class="w-full lg:w-1/2 text-center lg:text-left">
                     <h1 class="font-anton text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] text-brandBlack uppercase tracking-tight">
                         La verdad que <br>
@@ -86,35 +109,36 @@
                     <h2 class="font-anton text-3xl md:text-5xl text-brandBlack leading-[1.1] uppercase mt-6">
                         detrás del <span class="text-brandRed">éxito,</span>
                         el <span class="text-brandRed">poder</span> y
-                        las <span class="text-brandRed">drogas.</span>
+                        las <span class="text-brandRed">dependencias.</span>
                     </h2>
                     
                     <div class="mt-8 border-l-4 border-brandRed pl-6 max-w-md mx-auto lg:mx-0 text-left">
-                        <p class="text-xl md:text-2xl font-medium text-gray-800 leading-snug">
-                            Una crítica social y una reflexión profunda sobre las falsas apariencias, el poder y las consecuencias destructivas del consumo de drogas.
+                        <p class="text-xl md:text-2xl font-semibold text-gray-800 leading-snug">
+                            Una crítica social y una reflexión profunda sobre las falsas apariencias y las consecuencias destructivas del consumo de sustancias psicoactivas y otras adicciones.
                         </p>
                     </div>
 
-                    <!-- Botones de Acción Doble -->
-                    <div class="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-                        <!-- Botón Asesoría -->
-                        <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="w-full sm:w-auto bg-brandRed hover:bg-red-800 text-white font-anton text-xl py-4 px-8 rounded-md transition duration-300 shadow-lg flex flex-col items-center justify-center uppercase tracking-wide transform hover:-translate-y-1">
-                            <span>Agendar Sesión</span>
-                            <span class="text-yellow-300 text-sm tracking-normal font-sans font-bold">Por solo $50 USD</span>
+                    <!-- Botones de Acción Duales -->
+                    <div class="mt-10 flex flex-col gap-4 items-center lg:items-start">
+                        <!-- Botón Videoconsulta -->
+                        <a href="https://wa.me/573158511427?text=Hola%20Licenciada%20Cecilia,%20deseo%20agendar%20la%20videoconsulta%20de%2045%20minutos%20($150.000%20COP%20/%20$50%20USD)." target="_blank" class="w-full sm:w-10/12 bg-brandRed hover:bg-red-800 text-white font-anton text-xl md:text-2xl py-4 px-6 rounded-xl transition duration-300 shadow-lg flex flex-col items-center justify-center uppercase tracking-wide transform hover:-translate-y-1">
+                            <span>Agendar Videoconsulta <span class="text-brandYellow">(45 min)</span></span>
+                            <span class="text-white text-sm md:text-base tracking-normal font-sans font-bold mt-1">Valor: $150.000 COP o $50 USD</span>
                         </a>
                         
-                        <!-- Botón Libro -->
-                        <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'." target="_blank" class="w-full sm:w-auto bg-brandBlack hover:bg-gray-900 text-white font-anton text-xl py-4 px-8 rounded-md transition duration-300 shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide border-2 border-brandBlack transform hover:-translate-y-1">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                            Adquirir el Libro
+                        <!-- Botón Libro Digital -->
+                        <a href="https://wa.me/573158511427?text=Hola%20Licenciada%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'%20en%20formato%20digital." target="_blank" class="w-full sm:w-10/12 bg-brandBlack hover:bg-gray-900 text-white font-anton text-xl py-4 px-6 rounded-xl transition duration-300 shadow-lg flex flex-col items-center justify-center uppercase tracking-wide border-2 border-brandBlack transform hover:-translate-y-1">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-6 h-6 text-brandYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <span>Adquirir el Libro</span>
+                            </div>
+                            <span class="text-gray-300 text-sm tracking-normal font-sans font-bold mt-1">Exclusivamente en Formato Digital</span>
                         </a>
                     </div>
-
                 </div>
 
-                <!-- Columna Derecha: Video Reproductor Principal -->
+                <!-- Columna Derecha: Video Principal -->
                 <div class="w-full lg:w-1/2">
-                    <!-- Contenedor Seguro para Video -->
                     <div class="rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-brandBlack transform hover:scale-[1.02] transition duration-300">
                         <div class="video-responsive">
                             <iframe 
@@ -132,97 +156,99 @@
         </div>
     </section>
 
-    <!-- Sección de Consecuencias (Actualizada con imágenes sobre drogas, casinos y sufrimiento) -->
-    <section class="py-20 bg-gray-50 border-t border-gray-200">
+    <!-- Nueva Sección: El Colchón de Vida -->
+    <section class="py-20 bg-brandBlack text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-anton text-4xl md:text-5xl text-brandBlack uppercase">Las consecuencias <span class="text-brandRed">ocultas</span></h2>
-                <div class="h-2 w-24 bg-brandRed mx-auto mt-4"></div>
-                <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
-                    Detrás del lujo y las falsas apariencias, el consumo de drogas y la adicción a los casinos destruyen lo más valioso: <strong>tu familia y tu tranquilidad mental.</strong>
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Tarjeta 1: Angustia Familiar -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 group">
-                    <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=1000&auto=format&fit=crop" alt="Desesperación y Angustia" class="w-full h-64 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brandBlack mb-2">Angustia y Codependencia</h3>
-                        <p class="text-gray-600">El desgaste emocional y el dolor constante de intentar rescatar a quien no quiere ayuda consumen la paz del hogar día tras día.</p>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="w-32 h-32 md:w-48 md:h-48 bg-brandRed rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(204,0,0,0.6)]">
+                        <svg class="w-16 h-16 md:w-24 md:h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                     </div>
                 </div>
-                
-                <!-- Tarjeta 2: Ludopatía / Casinos -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 group">
-                    <img src="https://images.unsplash.com/photo-1605663717163-9f5b61ba7dce?q=80&w=1000&auto=format&fit=crop" alt="Ludopatía y Casinos" class="w-full h-64 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brandBlack mb-2">Ludopatía y Ruina</h3>
-                        <p class="text-gray-600">La adicción al juego y los casinos devora el patrimonio, llenando de mentiras, deudas y desesperación a la familia entera.</p>
-                    </div>
-                </div>
-                
-                <!-- Tarjeta 3: Drogadicción -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 group">
-                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1000&auto=format&fit=crop" alt="Drogadicción y Excesos" class="w-full h-64 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brandBlack mb-2">Drogas y Excesos</h3>
-                        <p class="text-gray-600">Vivir con el miedo permanente a la próxima recaída, a una sobredosis o a esa temida llamada de emergencia a media noche.</p>
-                    </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h2 class="font-anton text-4xl md:text-5xl uppercase mb-4 text-brandYellow">El "Colchón de Vida"</h2>
+                    <h3 class="text-2xl font-bold mb-6 text-white">Rompe la codependencia y teje tu red de seguridad.</h3>
+                    <p class="text-lg text-gray-300 mb-6 font-medium leading-relaxed">
+                        Nadie se recupera de una dependencia en el vacío o a base de fuerza de voluntad pura. Las adicciones alteran las emociones y desequilibran a toda la familia. 
+                    </p>
+                    <p class="text-lg text-gray-300 font-medium leading-relaxed">
+                        El <strong>Colchón de Vida</strong> es la red de contención que construimos juntos para evitar que el entorno familiar colapse. Impide caer al vacío, te permite poner límites firmes desde el amor y brinda las herramientas reales para levantarse.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonios Breves -->
-    <section class="py-20 bg-brandBlack text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-anton text-4xl md:text-5xl uppercase mb-12 text-white">Familias que encontraron <span class="text-brandRed">esperanza</span></h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-                <div class="bg-gray-900 p-8 rounded-lg border-l-4 border-brandRed text-left">
-                    <p class="italic text-gray-300 mb-4 text-lg">"La asesoría nos abrió los ojos y nos dio valor para poner límites. Fue doloroso enfrentar la verdad, pero por fin estamos viendo cambios reales."</p>
-                    <p class="font-bold font-anton tracking-wide text-white uppercase">- Familia R.G.</p>
+    <!-- Sección de Consecuencias -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-anton text-4xl md:text-5xl text-brandBlack uppercase">El impacto <span class="text-brandRed">silencioso</span></h2>
+                <div class="h-2 w-24 bg-brandRed mx-auto mt-4"></div>
+                <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto font-medium">
+                    Detrás del lujo y las falsas apariencias, la dependencia a sustancias psicoactivas y la adicción a los casinos destruyen lo más valioso: <strong>tu familia y tu tranquilidad mental.</strong>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Desesperación y Angustia" class="w-full h-56 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="font-bold text-2xl text-brandBlack mb-3">Angustia y Codependencia</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">El desgaste emocional y el dolor constante de intentar rescatar a quien no quiere ayuda consumen la paz del hogar día tras día.</p>
+                    </div>
                 </div>
-                <div class="bg-gray-900 p-8 rounded-lg border-l-4 border-brandRed text-left">
-                    <p class="italic text-gray-300 mb-4 text-lg">"Profesional, empática pero muy directa. Justo lo que necesitas cuando el problema de drogas en tu entorno te tiene nublado."</p>
-                    <p class="font-bold font-anton tracking-wide text-white uppercase">- Carlos V.</p>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <img src="https://images.unsplash.com/photo-1605663717163-9f5b61ba7dce?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Ludopatía y Casinos" class="w-full h-56 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="font-bold text-2xl text-brandBlack mb-3">Ludopatía y Ruina</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">La adicción al juego devora el patrimonio, llenando de mentiras, deudas y desesperación a la familia entera.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Dependencias y Excesos" class="w-full h-56 object-cover filter grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="font-bold text-2xl text-brandBlack mb-3">La Trampa Invisible</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Vivir con el miedo permanente a la próxima recaída o justificar una dependencia porque "es aceptada socialmente".</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Sección de Más Acerca de la Dra. Cecilia Besso -->
+    <!-- Sección de Más Acerca de la Lic. Cecilia Besso (Orden corregido) -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="font-anton text-4xl md:text-5xl text-brandBlack uppercase">Conoce más acerca de la <span class="text-brandRed">Dra. Cecilia Besso</span></h2>
+                <h2 class="font-anton text-4xl md:text-5xl text-brandBlack uppercase">Conoce más acerca de la <span class="text-brandRed">Lic. Cecilia Besso</span></h2>
                 <div class="h-2 w-24 bg-brandRed mx-auto mt-4"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Video 1 -->
+                <!-- Video 1: Juan Lozano (cOhZalUhfZU) -->
                 <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
                     <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe loading="lazy" src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <!-- Video 2 -->
+                <!-- Video 2: Entrevista Red+ (2FttgXpJCzU) -->
                 <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
                     <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe loading="lazy" src="https://www.youtube.com/embed/2FttgXpJCzU?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <!-- Video 3 -->
+                <!-- Video 3: Semana Noticias - Regulación (u3CVZbgELuU) -->
                 <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
                     <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe loading="lazy" src="https://www.youtube.com/embed/u3CVZbgELuU?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <!-- Video 4 -->
+                <!-- Video 4: Porque si, porque no (vD7xHbqhIQE) -->
                 <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-200">
                     <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/cOhZalUhfZU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe loading="lazy" src="https://www.youtube.com/embed/vD7xHbqhIQE?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -232,21 +258,21 @@
     <!-- Call to Action Final Dual -->
     <section class="py-24 bg-gray-50 text-center px-4 relative overflow-hidden border-t border-gray-200">
         <div class="absolute top-0 left-0 w-full h-2 bg-brandRed"></div>
-        <div class="max-w-3xl mx-auto relative z-10">
-            <h2 class="font-anton text-5xl md:text-7xl text-brandBlack uppercase mb-6">Da el <span class="text-brandRed">primer paso</span> hoy</h2>
-            <p class="text-2xl text-gray-600 mb-10 font-medium">Contáctame directamente vía WhatsApp y elige cómo deseas empezar.</p>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="font-anton text-5xl md:text-6xl text-brandBlack uppercase mb-6">Da el <span class="text-brandRed">primer paso</span> hoy</h2>
+            <p class="text-xl md:text-2xl text-gray-700 mb-10 font-bold">Contáctame directamente vía WhatsApp y elige cómo deseas empezar a sanar.</p>
             
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <!-- Botón Asesoría -->
-                <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20agendar%20la%20consulta%20virtual%20de%20$50%20USD." target="_blank" class="bg-brandRed hover:bg-red-800 text-white font-anton text-2xl md:text-3xl py-5 px-10 rounded-xl transition duration-300 shadow-[0_10px_30px_rgba(204,0,0,0.4)] transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center">
-                    Agendar Asesoría
-                    <span class="text-yellow-300 text-lg tracking-normal font-sans font-bold mt-1">Valor: $50 USD</span>
+                <!-- Botón Videoconsulta -->
+                <a href="https://wa.me/573158511427?text=Hola%20Licenciada%20Cecilia,%20deseo%20agendar%20la%20videoconsulta%20de%2045%20minutos%20($150.000%20COP%20/%20$50%20USD)." target="_blank" class="w-full sm:w-auto bg-brandRed hover:bg-red-800 text-white font-anton text-2xl py-5 px-8 rounded-xl transition duration-300 shadow-[0_10px_30px_rgba(204,0,0,0.4)] transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center">
+                    Agendar Videoconsulta
+                    <span class="text-brandYellow text-base tracking-normal font-sans font-bold mt-1">45 Minutos: $150.000 COP o $50 USD</span>
                 </a>
 
-                <!-- Botón Libro -->
-                <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'." target="_blank" class="bg-brandBlack hover:bg-gray-900 text-white font-anton text-2xl md:text-3xl py-5 px-10 rounded-xl transition duration-300 shadow-xl transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center border-2 border-brandBlack">
+                <!-- Botón Libro Digital -->
+                <a href="https://wa.me/573158511427?text=Hola%20Licenciada%20Cecilia,%20estoy%20interesado/a%20en%20adquirir%20tu%20libro%20'Esto%20le%20puede%20pasar%20a%20usted%20o%20a%20sus%20hijos'%20en%20formato%20digital." target="_blank" class="w-full sm:w-auto bg-brandBlack hover:bg-gray-900 text-white font-anton text-2xl py-5 px-8 rounded-xl transition duration-300 shadow-xl transform hover:-translate-y-1 uppercase tracking-wide flex flex-col items-center border-2 border-brandBlack">
                     Adquirir el Libro
-                    <span class="text-gray-300 text-lg tracking-normal font-sans font-medium mt-1">En formato físico o digital</span>
+                    <span class="text-gray-300 text-base tracking-normal font-sans font-bold mt-1">Solo en Formato Digital</span>
                 </a>
             </div>
         </div>
@@ -254,11 +280,11 @@
 
     <!-- Footer -->
     <footer class="bg-brandBlack text-gray-400 py-8 text-center text-sm border-t-4 border-brandRed">
-        <p>&copy; 2026 Cecilia Besso. Consulta Profesional y Confidencial.</p>
+        <p>&copy; 2026 Lic. Cecilia Besso. Consulta Profesional y Confidencial.</p>
     </footer>
 
     <!-- Botón Flotante de WhatsApp Genérico -->
-    <a href="https://wa.me/573158511427?text=Hola%20Cecilia,%20deseo%20más%20información%20sobre%20tus%20servicios." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 btn-whatsapp hover:bg-[#128C7E] transition-colors">
+    <a href="https://wa.me/573158511427?text=Hola%20Licenciada%20Cecilia,%20deseo%20más%20información%20sobre%20tus%20servicios." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 btn-whatsapp hover:bg-[#128C7E] transition-colors">
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
